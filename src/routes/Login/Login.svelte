@@ -123,11 +123,13 @@ const sendForm = async () => {
 
 
         .login {
-            margin-block-start: 25%;
+            // margin-block-start: 25%;
             max-width: 400px;
             width: 100%;
             padding: 20px;
-            height: 100%;
+            flex-grow: 0;
+            flex-shrink: 1;
+            
 
             .tabs {
                 width: 50%;
