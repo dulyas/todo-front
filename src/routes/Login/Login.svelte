@@ -3,14 +3,14 @@ import { resize } from "@/transition";
 import { getContext } from "svelte";
 import type { Writable } from "svelte/store";
 import type { UserService } from "@/models";
-import Loader from "@/components/Loader.svelte";
+
 
 type LoginRegister = 'login' | 'register'
 
 
 const errorMessage = getContext<Writable<string>>('errorMessage')
 const userService = getContext<UserService>('userService')
-const isLoading = getContext<Writable<boolean>>('isLoading')
+
 
 let selectedTab: LoginRegister = 'login'
 let email: string = ''
@@ -138,6 +138,7 @@ const sendForm = async () => {
                 // align-items: center;
                 position: relative;
                 padding-block-end: 5px;
+                white-space: nowrap;
 
                 &.selected-register {
                     &::after {
