@@ -1,17 +1,11 @@
 <script lang="ts">
-import { writable } from "svelte/store";
-import { setContext } from "svelte";
+	import { writable } from "svelte/store";
+	import { setContext } from "svelte";
 
+	const isLoading = writable<boolean>(false);
 
-const isLoading = writable<boolean>(false)
-
-
-setContext('isLoading', isLoading)
-
+	setContext("isLoading", isLoading);
 
 </script>
 
 <slot />
-
-
-

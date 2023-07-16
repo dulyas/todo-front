@@ -1,12 +1,11 @@
-<script lang='ts'>
-import { setContext } from "svelte";
-import { writable } from "svelte/store";
+<script lang="ts">
+	import { setContext } from "svelte";
+	import { writable } from "svelte/store";
 
-const errorMessage = writable<string>('')
+	const errorMessage = writable<string>("");
 
-setContext('errorMessage', errorMessage)
+	setContext("errorMessage", errorMessage);
 
 </script>
-
 
 <slot />
